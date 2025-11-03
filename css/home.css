@@ -2,8 +2,8 @@
 body {font-family: 'Bricolage Grotesque', sans-serif;}
 ul ,ol{list-style: none;padding:0;margin:0;}
 .container{max-width: 1280px;margin: 0 auto;padding: 0 20px;}
-.eventura-header {width: 100%;position: relative;z-index: 1000;display: flex;justify-content: space-between;align-items: center;padding: 15px 40px;color: #fff;margin-bottom: -165px;}
-.navbar {flex: 1;}
+.eventura-header {width: 100%;position: relative;z-index: 1000;display: flex;justify-content: space-between;align-items: center;color: #fff;margin-bottom: -165px;}
+.navbar {flex: 1;padding: 12px 40px;}
 .navbar-collapse {justify-content: center;}
 nav ul {list-style: none;display: flex;gap: 25px;margin: 0;padding: 0;}
 nav ul li a { color: #fff !important; text-decoration: none; font-weight: 500; transition: color 0.3s;}
@@ -27,7 +27,7 @@ nav ul li a:hover {color: #ffb400;}
 .services-section p {text-align: center;margin-bottom: 40px;}
 
 /* Grid container */
- .services-grid {display: grid;grid-template-columns:repeat(6,1fr);grid-template-rows: repeat(5,120px);gap: 20px;}
+.services-grid {display: grid;grid-template-columns:repeat(6,1fr);grid-template-rows: repeat(5,120px);gap: 20px;}
 .service-card {position: relative;overflow: hidden;border-radius: 15px;cursor: pointer;}
 .service-card img {width: 100%;height: 100%;object-fit: cover;display: block;}
 .services-overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.4);z-index: 2; opacity: 1;}
@@ -174,7 +174,7 @@ nav ul li a:hover {color: #ffb400;}
 
 @media screen and (max-width:767px) {
 
-  .eventura-header {padding: 15px 20px !important;}
+  .navbar {padding: 12px 0px !important;}
   .navbar-collapse {display: none; position: absolute; top: 100%; left: 0; width: 100%; background: #fff; padding: 20px 0; z-index: 999; transition: all 0.3s ease;}
   .navbar-collapse.show {display: block;}
   .mobile-menu-header {display: flex;justify-content: space-between;align-items: center;padding: 0 20px 20px;border-bottom: 1px solid #ccc;}
