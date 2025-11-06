@@ -6,6 +6,7 @@
     <title>Eventura-Home page</title>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/home.css">
 </head>
@@ -221,19 +222,19 @@
             <!-- <p data-aos="fade-up" data-aos-delay="200">A glimpse into some of our most memorable events and celebrations.</p> -->
 
             <div class="gallery-grid">
-                <div class="gallery-item img4" data-aos="fade-up">
+                <div class="gallery-item img4" data-aos="fade-up" data-popup="birthday">
                     <img src="/images/birthday-img.webp" alt="Gallery Image 1">
                     <div class="gallery-overlay"></div>
                 </div>
-                <div class="gallery-item img5" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-item img5" data-aos="fade-up" data-aos-delay="200" data-popup="baby">
                     <img src="/images/babydecor.webp" alt="Gallery Image 2">
                     <div class="gallery-overlay"></div>
                 </div>
-                <div class="gallery-item img6" data-aos="fade-up" data-aos-delay="400">
-                    <img src="/images/corporate.webp" alt="Gallery Image 3">
+                <div class="gallery-item img6" data-aos="fade-up" data-aos-delay="400" data-popup="retirement">
+                    <img src="/images/retirement1.webp" alt="Gallery Image 3">
                     <div class="gallery-overlay"></div>
                 </div>
-                <div class="gallery-item img7" data-aos="fade-up" data-aos-delay="600">
+                <div class="gallery-item img7" data-aos="fade-up" data-aos-delay="600" data-popup="return-gifts">
                     <img src="/images/return-giftimg.webp" alt="Gallery Image 4">
                     <div class="gallery-overlay"></div>
                 </div>
@@ -249,7 +250,87 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Popup Modal -->
+
+        <!-- Birthday Popup -->
+
+    <div class="popup-slider" id="birthday">
+        <div class="popup-content">
+            <span class="close-popup">×</span>
+            <div class="swiper birthday-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/birthday-img.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/birthday2.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/birthday3.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/birthday4.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/birthday5.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/birthday6.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/birthday7.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/birthday8.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/birthday9.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/birthday10.webp" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Baby Shower Popup -->
+
+    <div class="popup-slider" id="baby">
+        <div class="popup-content">
+            <span class="close-popup">×</span> 
+            <div class="swiper baby-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/babydecor.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/baby-shower1.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/baby-shower2.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/baby-shower3.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/baby-shower4.webp" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Return Gifts Popup -->
+
+    <div class="popup-slider" id="return-gifts">
+        <div class="popup-content">
+            <span class="close-popup">×</span>
+            <div class="swiper returngifts-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/return-giftimg.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/return-gifts1.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/return-gifts2.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/return-gifts.webp" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- retirement popup -->
+
+    <div class="popup-slider" id="retirement">
+        <div class="popup-content">
+            <span class="close-popup">×</span>
+            <div class="swiper retirement-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/retirement1.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/retirement.webp" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+       
+<!-- Footer Section -->
      
     <footer class="eventura-footer">
         <div class="container">
@@ -295,6 +376,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/js/home.js"></script>
     <script>
         const menuToggle = document.getElementById('menuToggle');
@@ -317,6 +399,76 @@
             menuToggle.classList.remove('hide-elements');
         });
     </script>
+
+   <script>
+        // Initialize Swipers
+        const birthdaySwiper = new Swiper(".birthday-swiper", {
+            loop:false,
+            navigation: {
+            nextEl: ".birthday-swiper .swiper-button-next",
+            prevEl: ".birthday-swiper .swiper-button-prev",
+            },
+        });
+
+        const babySwiper = new Swiper(".baby-swiper", {
+            loop:false,
+            navigation: {
+            nextEl: ".baby-swiper .swiper-button-next",
+            prevEl: ".baby-swiper .swiper-button-prev",
+            },
+        });
+
+        const returngifts = new Swiper(".returngifts-swiper", {
+            loop:false,
+            navigation: {
+            nextEl: ".returngifts-swiper .swiper-button-next",
+            prevEl: ".returngifts-swiper .swiper-button-prev",
+            },
+        });
+
+         const retirement = new Swiper(".retirement-swiper", {
+            loop:false,
+            navigation: {
+            nextEl: ".retirement-swiper .swiper-button-next",
+            prevEl: ".retirement-swiper .swiper-button-prev",
+            },
+        });
+
+        // Popup open / close
+        const popups = document.querySelectorAll(".popup-slider");
+        const galleryItems = document.querySelectorAll(".gallery-item");
+        const body = document.body;
+
+        galleryItems.forEach((item) => {
+            item.addEventListener("click", () => {
+            const popupId = item.getAttribute("data-popup");
+            const popup = document.getElementById(popupId);
+            if (popup) {
+                popup.style.display = "flex";
+                body.style.overflow = "hidden"; // disable background scroll
+            }
+            });
+        });
+
+        document.querySelectorAll(".close-popup").forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+            const popup = e.target.closest(".popup-slider");
+            popup.style.display = "none";
+            body.style.overflow = ""; // enable scroll again
+            });
+        });
+
+        popups.forEach((popup) => {
+            popup.addEventListener("click", (e) => {
+            if (e.target === popup) {
+                popup.style.display = "none";
+                body.style.overflow = "";
+            }
+            });
+        });
+    </script>
+
+
 
 
 </body>
