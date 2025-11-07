@@ -239,19 +239,19 @@ nav ul li a:hover {color: #ffb400;}
 }
 
 
-.close-popup {
-  position: absolute;
-  top:0;
-  right:-50px;
-  color:#fff;
+.popup-content .close-popup {
+  position: fixed;
+  top: 20px;
+  right: 30px;
   font-size: 40px;
-  font-weight: bold;
+  color: white;
   cursor: pointer;
-  z-index: 10000;
+  z-index: 9999;
+  font-weight: bold;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #ffffff;
+  color: #fff;
 }
 .swiper-wrapper{align-items:center;}
